@@ -72,7 +72,7 @@
 <!-- If not using comments, you can remove the data-key and data-url attributes -->
 <!-- Data theme ['auto', 'dark', 'light'] -->
 
-<body data-theme="auto">
+<body data-theme="pink">
 
     <!-- Navbar Bottom -->
     <nav class="navbar bg-dark navbar-expand fixed-bottom rounded-top-4 border-top p-0" id="navbar-menu">
@@ -317,25 +317,25 @@
 
                         <div class="carousel-inner rounded-8">
                             <div class="carousel-item active">
-								<img src="assets/images/_FSL2854.jpg" alt="image 1"  class="d-block w-100" onclick="util.modal(this)">
+								<img src="./assets/images/_FSL2854.jpg" alt="image 1"  class="d-block w-100" onclick="util.modal(this)">
                             </div>
                             <div class="carousel-item">
-                                <img src="assets/images/_FSL2885.jpg" alt="image 2" class="d-block w-100" onclick="util.modal(this)">
+                                <img src="./assets/images/_FSL2885.jpg" alt="image 2" class="d-block w-100" onclick="util.modal(this)">
                             </div>
 							  <div class="carousel-item">
-                                <img src="assets/images/_FSL3003.jpg" alt="image 3" class="d-block w-100" onclick="util.modal(this)">
+                                <img src="./assets/images/_FSL3003.jpg" alt="image 3" class="d-block w-100" onclick="util.modal(this)">
                             </div>
 							<div class="carousel-item">
-							   <img src="assets/images/_FSL2973.jpg" alt="image 4" class="d-block w-100" onclick="util.modal(this)">
+							   <img src="./assets/images/_FSL2973.jpg" alt="image 4" class="d-block w-100" onclick="util.modal(this)">
                             </div>
                             <div class="carousel-item">
-                                <img src="assets/images/_FSL2963.jpg" alt="image 5" class="d-block w-100" onclick="util.modal(this)">
+                                <img src="./assets/images/_FSL2963.jpg" alt="image 5" class="d-block w-100" onclick="util.modal(this)">
                             </div>          
 							<div class="carousel-item">
-                                <img src="assets/images/_FSL3177.jpg" alt="image 6" class="d-block w-100" onclick="util.modal(this)">
+                                <img src="./assets/images/_FSL3177.jpg" alt="image 6" class="d-block w-100" onclick="util.modal(this)">
                             </div> 							
 							    <div class="carousel-item">
-                                <img src="assets/images/_FSL3231.jpg" alt="image 7" class="d-block w-100" onclick="util.modal(this)">
+                                <img src="./assets/images/_FSL3231.jpg" alt="image 7" class="d-block w-100" onclick="util.modal(this)">
                             </div> 
                         </div>
 
@@ -480,7 +480,21 @@
         </section>
     </main>
 
+<!-- Welcome Page -->
+    <div class="loading-page bg-black" id="welcome" style="opacity: 1;">
+        <div class="d-flex justify-content-center align-items-center" style="height: 100vh !important;">
+            <div class="text-center">
+                <h2 class="font-esthetic mb-4" style="font-size: 2.5rem;">The Wedding Of</h2>
 
+                <img src="./assets/images/bg.png" alt="background" class="img-center-crop rounded-circle border border-3 border-light shadow mb-4 mx-auto">
+
+                <h2 class="font-esthetic mb-4" style="font-size: 2.5rem;">Nanda &amp; April</h2>
+                <div id="guest-name" data-message="Kepada Yth Bapak/Ibu/Saudara/i"></div>
+
+                <button type="button" class="btn btn-light shadow rounded-4 mt-3" onclick="guest.open(this)"><i class="fa-solid fa-envelope-open me-2"></i>Open Invitation</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Theme Button -->
     <button type="button" id="button-theme" style="display: none;" class="btn bg-dark border btn-sm rounded-circle btn-theme position-fixed" onclick="theme.change()">
